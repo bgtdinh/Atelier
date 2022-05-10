@@ -68,6 +68,12 @@ One main challenge was ensuring that data was rendered quickly, which meant miti
 
 **Technical Walkthrough and Challenges:**
 
+The product reviews section of the app is driven by an API call to the server to fetch the data for the reviews. Each product item has individual review meta data relevant to that specific item. That in itself was its own set of API calls while the reviews themselves had their seperate API calls. Additionally the reviews can be filtered.
+
+Each review contained username, review body, star ratings, comments, date of posting as well as reporting.
+
+One technical challenge I had was deciding on how to create the partial stars all across the apps. There were multiple solutions on how to do it including static images but the one I decided on using SVGs dynamically created through a custom React component. I decided on this as it would lower rendering times as it would not rely on additional asssets as well as allow complete flexibility on exact star ratios instead of predetermined star sizes. 
+
 
 
 # Installation:
